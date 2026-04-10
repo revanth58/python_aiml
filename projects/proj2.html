@@ -1,0 +1,17 @@
+2. menu driven polynomial features implementation----------------------------------------------------
+
+create a class called 'poly', every polynomial in this class is an object of poly type. every polynomial object contains 2 lists - coeff and deg
+
+if your polynomial is 1 -2x^2 + 3x^3 + 4 x^5. store it as 
+coeff = [1,-2,3,4]
+deg = [0,2,3,5]
+
+write the following functions first : 
+(i) read_poly - it should take input a polynomial and store it using an object properly
+(ii) add_poly - it should take inputs 2 polynomial objects p1,p2 and adds p2 to p1
+(iii) scalar_mult - it should take input a poly object and a int value, multiply the poly coefficients with the scalar int value (you can implement subtraction by using scalar mult 2nd poly by -1 and adding it to p1)
+(iv) differentiate - input is a poly p1. differentiates it and outputs a new poly object
+(v) evaluate - asks user for a particular x-value, evaluates poly p1 on that value and returns the value
+(vi) swap - swaps poly p1,p2 
+
+you will mainly have 2 polynomials p1,p2 you will operate on, you will read them from user using the read_poly function twice. and run an infinite loop giving user the choice to do these operations and add an option exit at the end
